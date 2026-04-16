@@ -1,13 +1,22 @@
 print("=== PROGRAM DERET ANGKA ===")
 
-# Ini untuk mendefinisikan batas
-a = 10 
+# Menampilkan semua bilangan ganjil
+# dari 1 hingga batas yang ditentukan
 
-# Kita lakukan perulangan
-for x in range(1, 11):
-    # Cek kalau ganjil
-    if x % 2 == 1:
-        # Cetak outputnya
-        print("Ini angka ganjil:", x)
+BATAS_ATAS = 10
+
+
+def adalah_ganjil(angka):
+    return angka % 2 != 0
+
+
+def tampilkan_angka_ganjil(batas):
+    print("=== PROGRAM DERET ANGKA ===")
+    for angka in range(1, batas + 1):
+        if adalah_ganjil(angka):
+            print("Angka ganjil:", angka)
+
+
+tampilkan_angka_ganjil(BATAS_ATAS)
 
 # Selesai
